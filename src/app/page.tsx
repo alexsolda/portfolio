@@ -1,7 +1,9 @@
-export default function Home() {
+const Home = () => {
   return (
-    <main className="bg-black-800 text-white-100">
+    <main>
       <p>home</p>
     </main>
   )
 }
+
+export default Home
