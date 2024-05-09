@@ -1,7 +1,13 @@
+import Header from '@/components/Header'
+import HomeTemplate from '@/templates/Home'
+
 const Home = () => {
   return (
     <main>
-      <p>home</p>
+      <Header />
+      <HomeTemplate />
+      <HomeTemplate />
+      <HomeTemplate />
     </main>
   )
 }
