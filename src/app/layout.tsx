@@ -23,7 +23,7 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body
-        className={`${kanit.className} text-white min-h-screen bg-gradient-to-tl from-black to-gradientFrom`}
+        className={`${kanit.className} text-white min-h-screen bg-gradient-to-tl from-gradientFrom to-black`}
       >
         <Providers>{children}</Providers>
       </body>

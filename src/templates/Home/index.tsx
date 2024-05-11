@@ -1,23 +1,23 @@
 import ContentWrapper from '@/components/ContentWrapper'
-import Image from 'next/image'
 import { ReactElement } from 'react'
-import profileImage from '/public/images/profile-avatar.png'
 import LinkBt from '@/components/Buttons/LinkBt'
 import { BiLogoLinkedinSquare, BiLogoGithub } from 'react-icons/bi'
+import Avatar from '@/components/Avatar'
+import { LiaHandPeace } from 'react-icons/lia'
 
 const HomeTemplate = (): ReactElement => {
   return (
     <ContentWrapper>
-      <div className="w-full mt-6 h-full flex flex-col items-center justify-center gap-y-12">
-        <Image
-          src={profileImage}
-          alt="Foto de perfil do desenvolvedor."
-          priority
-        />
+      <div className="w-full min-h-[calc(100vh-64px)] flex flex-col items-center justify-center gap-y-12">
+        <Avatar />
         <div className="flex flex-col justify-center items-center gap-y-3">
-          <h4 className="font-regular text-5xl">
-            Olá, me chamo <span className="text-primary">Alex </span>
-            ✌️
+          <h4 className="flex items-center font-regular text-5xl">
+            Olá, me chamo <span className="ml-1 text-primary"> Alex </span>
+            {/* <div className="rotate-[5deg]">✌️</div> */}
+            <LiaHandPeace
+              size={40}
+              className="ml-1 text-primary animate-bounceLow"
+            />
           </h4>
           <h5 className="font-thin text-2xl">
             Sou desenvolvedor <span className="text-primary">frontend </span>,

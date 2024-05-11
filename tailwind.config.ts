@@ -26,6 +26,15 @@ const config: Config = {
       },
       boxShadow: {
         bShadow: '0px 0px 24px -3px rgba(0,156,188,1)'
+      },
+      keyframes: {
+        bounceLow: {
+          '0%, 100%': { rotate: '6deg' },
+          '50%': { rotate: '-6deg' }
+        }
+      },
+      animation: {
+        bounceLow: 'bounceLow infinite 2s ease-in-out'
       }
     }
   },

@@ -9,7 +9,7 @@ const ThemeBt = (): ReactElement => {
   return (
     <button
       onClick={() => setIsDark(!isDark)}
-      className="text-primary hover:scale-125 ease-in duration-200"
+      className="text-primary active:scale-90 hover:scale-125 ease-in duration-200"
     >
       {isDark ? <MdSunny size={25} /> : <MdDarkMode size={25} />}
     </button>
