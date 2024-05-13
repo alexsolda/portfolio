@@ -12,7 +12,10 @@ const kanit = Kanit({
 export const metadata: Metadata = {
   title: 'Alex - Desenvolvedor frontend',
   description:
-    'Site profissional com informações e detalhamento de experiências.'
+    'Site profissional com informações e detalhamento de experiências.',
+  icons: {
+    icon: '/images/favicon.ico'
+  }
 }
 
 const RootLayout = ({
