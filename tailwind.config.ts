@@ -1,20 +1,43 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
+import { nextui } from '@nextui-org/react'
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
+  darkMode: 'class',
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        kanit: ['var(--font-kanit)']
       },
-    },
+      colors: {
+        primary: '#009CBC',
+        white: '#FFFFFF',
+        black: '#080019',
+        gradientFrom: '#00404D'
+      },
+      maxWidth: {
+        userView: '80rem'
+      },
+      width: {
+        userView: '80rem'
+      },
+      boxShadow: {
+        bShadow: '0px 0px 24px -3px rgba(0,156,188,1)'
+      },
+      keyframes: {
+        bounceLow: {
+          '0%, 100%': { rotate: '6deg' },
+          '50%': { rotate: '-6deg' }
+        }
+      },
+      animation: {
+        bounceLow: 'bounceLow infinite 2s ease-in-out'
+      }
+    }
   },
-  plugins: [],
-};
-export default config;
+  plugins: [nextui()]
+}
+export default config
