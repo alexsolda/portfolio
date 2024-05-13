@@ -11,7 +11,7 @@ const Avatar = (): ReactElement => {
         priority
         width={200}
         height={200}
-        className="absolute top-[-20px] left-[-24px]"
+        className="absolute top-[-20px] left-[-24px] rounded-lg"
       />
     </div>
   )

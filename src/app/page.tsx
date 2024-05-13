@@ -6,8 +6,6 @@ const Home = () => {
     <main>
       <Header />
       <HomeTemplate />
-      <HomeTemplate />
-      <HomeTemplate />
     </main>
   )
 }
