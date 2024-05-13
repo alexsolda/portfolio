@@ -21,9 +21,9 @@ const RootLayout = ({
   children: React.ReactNode
 }>) => {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <body
-        className={`${kanit.className} text-white min-h-screen bg-gradient-to-tl from-gradientFrom to-black`}
+        className={`${kanit.className} bg-white transition dark:text-white text-black min-h-screen dark:bg-gradient-to-tl dark:from-gradientFrom dark:to-black`}
       >
         <Providers>{children}</Providers>
       </body>
