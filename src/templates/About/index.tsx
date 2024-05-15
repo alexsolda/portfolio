@@ -8,7 +8,7 @@ const AboutTemplate = (): ReactElement => {
       <ContentWrapper>
         <div className="flex flex-col text-center items-center justify-center gap-12">
           <SectionTitle title="Sobre" />
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 text-white dark:text-white">
             <p>
               Estou me especializando desde 2019 ao desenvolvimento web, mais
               especificamente a tecnologias voltadas ao frontend. Nesse período
