@@ -1,12 +1,18 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { Kanit } from 'next/font/google'
+import { Kanit, Dancing_Script } from 'next/font/google'
 import { Providers } from './providers'
 
 const kanit = Kanit({
   subsets: ['latin'],
   variable: '--font-kanit',
   weight: ['100', '400', '700']
+})
+
+const dancing = Dancing_Script({
+  subsets: ['latin'],
+  variable: '--font-dancing',
+  weight: ['400']
 })
 
 export const metadata: Metadata = {
@@ -26,7 +32,7 @@ const RootLayout = ({
   return (
     <html suppressHydrationWarning lang="en">
       <body
-        className={`${kanit.className} bg-white transition dark:text-white text-black min-h-screen dark:bg-gradient-to-tl dark:from-gradientFrom dark:to-black`}
+        className={`${kanit.variable} ${dancing.variable} font-kanit bg-white transition dark:text-white text-black min-h-screen dark:bg-gradient-to-tl dark:from-gradientFrom dark:to-black`}
       >
         <Providers>{children}</Providers>
       </body>

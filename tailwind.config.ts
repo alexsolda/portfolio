@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        kanit: ['var(--font-kanit)']
+        kanit: ['var(--font-kanit)'],
+        dancing: ['var(--font-dancing)']
       },
       colors: {
         primary: '#009CBC',
