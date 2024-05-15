@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import AboutTemplate from '@/templates/About'
 import HomeTemplate from '@/templates/Home'
@@ -10,6 +11,7 @@ const Home = () => {
       <HomeTemplate />
       <AboutTemplate />
       <ProjectsTemplate />
+      <Footer />
     </main>
   )
 }

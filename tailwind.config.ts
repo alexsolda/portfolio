@@ -17,7 +17,8 @@ const config: Config = {
         primary: '#009CBC',
         white: '#FFFFFF',
         black: '#080019',
-        gradientFrom: '#00404D'
+        gradientFrom: '#00404D',
+        gray: '#F1F1F1'
       },
       maxWidth: {
         userView: '80rem'
