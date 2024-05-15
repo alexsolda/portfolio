@@ -4,6 +4,7 @@ import LinkBt from '@/components/Buttons/LinkBt'
 import { BiLogoLinkedinSquare, BiLogoGithub } from 'react-icons/bi'
 import Avatar from '@/components/Avatar'
 import { LiaHandPeace } from 'react-icons/lia'
+import DividerBar from '@/components/DividerBar'
 
 const HomeTemplate = (): ReactElement => {
   return (
@@ -24,7 +25,7 @@ const HomeTemplate = (): ReactElement => {
           </h5>
         </div>
 
-        <div className="bg-primary h-2.5 w-52 rounded-lg" />
+        <DividerBar />
 
         <div className="flex gap-x-6 items-center">
           <LinkBt
