@@ -13,7 +13,7 @@ type IProjectCardProps = {
 
 export const ProjectCard = ({ data }: IProjectCardProps): ReactElement => {
   return (
-    <div className="group ease-in duration-200 flex md:flex-row flex-col rounded-lg overflow-hidden relative">
+    <div className="border-2 hover:border-primary border-transparent group ease-in duration-200 flex md:flex-row flex-col rounded-lg overflow-hidden relative">
       <div className="ease-in duration-100 group-hover:blur-sm relative w-[420px] h-[257px]">
         <Image
           src={data.banner}
@@ -24,7 +24,7 @@ export const ProjectCard = ({ data }: IProjectCardProps): ReactElement => {
           }}
         />
       </div>
-      <div className="ease-in duration-200 group-hover:blur-sm bg-black flex-1 p-4 flex flex-col gap-8">
+      <div className="ease-in duration-200 group-hover:blur-sm bg-gray dark:bg-black flex-1 p-4 flex flex-col gap-8">
         <div>
           <p className="text-xl font-bold">{data.name}</p>
           <p className="font-thin text-justify">{data.description}</p>
@@ -32,17 +32,20 @@ export const ProjectCard = ({ data }: IProjectCardProps): ReactElement => {
         <DividerBar size="1" />
         <div className="flex flex-wrap gap-3">
           {data.tech.map((technology, idx) => (
-            <Chip key={`key-${idx}`} className="bg-primary text-black">
+            <Chip
+              key={`key-${idx}`}
+              className="bg-primary dark:text-black text-gray"
+            >
               {technology}
             </Chip>
           ))}
         </div>
       </div>
-      <div className="ease-in duration-200 flex items-center justify-center gap-3 group-hover:opacity-80 opacity-0 bg-black absolute top-0 left-0 bottom-0 right-0">
+      <div className="ease-in duration-200 flex items-center justify-center gap-3 group-hover:opacity-80 opacity-0 dark:bg-black bg-gray absolute top-0 left-0 bottom-0 right-0">
         <LinkBt text="Acessar" link={data.link} icon={<MdWeb size={30} />} />
         <LinkBt
           text="Código"
-          link={data.link}
+          link={data.repo}
           icon={<HiMiniCodeBracketSquare size={30} />}
         />
       </div>
