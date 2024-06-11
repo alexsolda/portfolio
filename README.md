@@ -1,12 +1,12 @@
 # Portfólio
-## Projeto em construção
+### Projeto em construção
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/alexsolda/portfolio?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/alexsolda/portfolio?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/alexsolda/portfolio?style=for-the-badge)
 
 
-> Projeto do tipo blog com conteúdo sobre viagem criado com a finalidade de treinar e reforçar alguns conceitos e tecnologias que venho me aperfeiçoando ao longo do anos.
+> Portfólio de site pessoal para demonstrar meus conhecimentos e informações sobre a minha carreira.
 
 [Acesso](https://dev-alexsolda.vercel.app/)
 
