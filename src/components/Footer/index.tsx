@@ -5,7 +5,7 @@ import DividerBar from '../DividerBar'
 
 const Footer = (): ReactElement => {
   return (
-    <div className="bg-gray dark:bg-black py-12">
+    <div className="bg-white dark:bg-black py-12">
       <ContentWrapper>
         <div className="flex flex-col gap-6 items-center justify-center">
           <Logo />

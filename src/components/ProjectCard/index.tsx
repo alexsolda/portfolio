@@ -24,7 +24,7 @@ export const ProjectCard = ({ data }: IProjectCardProps): ReactElement => {
           }}
         />
       </div>
-      <div className="ease-in duration-200 group-hover:blur-sm bg-gray dark:bg-black flex-1 p-4 flex flex-col gap-8">
+      <div className="ease-in duration-200 group-hover:blur-md bg-white dark:bg-black flex-1 p-4 flex flex-col gap-8">
         <div>
           <p className="text-xl font-bold">{data.name}</p>
           <p className="font-thin text-justify">{data.description}</p>
@@ -34,7 +34,7 @@ export const ProjectCard = ({ data }: IProjectCardProps): ReactElement => {
           {data.tech.map((technology, idx) => (
             <Chip
               key={`key-${idx}`}
-              className="bg-primary dark:text-black text-gray"
+              className="bg-primary dark:text-black text-white"
             >
               {technology}
             </Chip>
@@ -42,7 +42,9 @@ export const ProjectCard = ({ data }: IProjectCardProps): ReactElement => {
         </div>
       </div>
       <div className="ease-in duration-200 flex items-center justify-center gap-3 group-hover:opacity-80 opacity-0 dark:bg-black bg-gray absolute top-0 left-0 bottom-0 right-0">
-        <LinkBt text="Acessar" link={data.link} icon={<MdWeb size={30} />} />
+        {data.link && (
+          <LinkBt text="Acessar" link={data.link} icon={<MdWeb size={30} />} />
+        )}
         <LinkBt
           text="Código"
           link={data.repo}

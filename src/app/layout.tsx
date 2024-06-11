@@ -32,7 +32,7 @@ const RootLayout = ({
   return (
     <html suppressHydrationWarning lang="en">
       <body
-        className={`${kanit.variable} ${dancing.variable} font-kanit bg-white transition dark:text-white text-black min-h-screen dark:bg-gradient-to-tl dark:from-gradientFrom dark:to-black`}
+        className={`${kanit.variable} ${dancing.variable} font-kanit bg-whiteish transition dark:text-whiteish text-black min-h-screen dark:bg-gradient-to-tl dark:from-gradientFrom dark:to-black`}
       >
         <Providers>{children}</Providers>
       </body>

@@ -25,5 +25,13 @@ export const projecsData: IProjecsDataInfos[] = [
     repo: 'https://github.com/alexsolda/tripp',
     link: 'https://tripp-blog.vercel.app/',
     tech: ['Next.js', 'JavaScript', 'GraphQl', 'Tailwind', 'Leaflet', 'CMS']
+  },
+  {
+    name: 'Portfólio',
+    description: 'Respositório deste portfólio.',
+    banner: '/images/portfolio-screen.png',
+    repo: 'https://github.com/alexsolda/portfolio',
+    link: '',
+    tech: ['Next.js', 'JavaScript', 'Tailwind']
   }
 ]

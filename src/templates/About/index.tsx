@@ -7,8 +7,8 @@ const AboutTemplate = (): ReactElement => {
     <div className="bg-primary py-12">
       <ContentWrapper>
         <div className="flex flex-col text-center items-center justify-center gap-12">
-          <SectionTitle title="Sobre" />
-          <div className="flex flex-col gap-6 text-white dark:text-white">
+          <SectionTitle title="Sobre" color="whiteish" />
+          <div className="flex flex-col gap-6 text-whiteish dark:text-whiteish">
             <p>
               Estou me especializando desde 2019 ao desenvolvimento web, mais
               especificamente a tecnologias voltadas ao frontend. Nesse período
