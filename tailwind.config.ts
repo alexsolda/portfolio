@@ -18,7 +18,7 @@ const config: Config = {
         white: '#FFFFFF',
         black: '#080019',
         gradientFrom: '#00404D',
-        gray: '#F1F1F1'
+        whiteish: '#FFF8F1'
       },
       maxWidth: {
         userView: '80rem'
