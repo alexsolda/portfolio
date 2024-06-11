@@ -16,14 +16,19 @@ const ModalContainer = ({
   children
 }: IModalContainerProps): ReactElement => {
   return (
-    <Modal isOpen={isOpen} onOpenChange={onOpenChange} backdrop="blur">
-      <ModalContent>
+    <Modal
+      isOpen={isOpen}
+      onOpenChange={onOpenChange}
+      backdrop="blur"
+      placement="center"
+    >
+      <ModalContent className="mx-3">
         {title && (
-          <ModalHeader className="flex flex-col gap-1 mx-8 mt-6 dark:text-whiteish text-black">
+          <ModalHeader className="flex flex-col gap-1 lg:mx-8 mx-3 mt-6 dark:text-whiteish text-black">
             {title}
           </ModalHeader>
         )}
-        <ModalBody className="p-8">{children}</ModalBody>
+        <ModalBody className="lg:p-8 p-3">{children}</ModalBody>
       </ModalContent>
     </Modal>
   )
