@@ -14,7 +14,7 @@ type IProjectCardProps = {
 export const ProjectCard = ({ data }: IProjectCardProps): ReactElement => {
   return (
     <div className="border-2 hover:border-primary border-transparent group ease-in duration-200 flex md:flex-row flex-col rounded-lg overflow-hidden relative">
-      <div className="ease-in duration-100 group-hover:blur-sm relative w-[420px] h-[257px]">
+      <div className="ease-in duration-100 group-hover:blur-sm relative lg:w-[420px] w=[370px] h-[257px]">
         <Image
           src={data.banner}
           alt="Picture of the author"

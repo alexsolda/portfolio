@@ -24,14 +24,14 @@ const HomeTemplate = (): ReactElement => {
         <div className="w-full min-h-[calc(100vh-64px)] flex flex-col items-center justify-center gap-y-12">
           <Avatar />
           <div className="flex flex-col justify-center items-center gap-y-3">
-            <h4 className="flex flex-wrap justify-center items-center font-regular text-5xl">
+            <h4 className="flex flex-wrap justify-center items-center font-regular lg:text-5xl text-3xl">
               Olá, me chamo <span className="ml-1 text-primary"> Alex </span>
               <LiaHandPeace
                 size={40}
                 className="ml-1 text-primary animate-bounceLow"
               />
             </h4>
-            <h5 className="font-thin text-2xl text-center">
+            <h5 className="font-thin lg:text-2xl text-xl text-center">
               Sou desenvolvedor <span className="text-primary">frontend</span>,
               fascinado por tecnologia e ouvinte assíduo de música.
             </h5>
