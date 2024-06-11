@@ -1,4 +1,5 @@
 # Portfólio
+[Acesso](https://dev-alexsolda.vercel.app/)
 ### Projeto em construção
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/alexsolda/portfolio?style=for-the-badge)
@@ -7,8 +8,6 @@
 
 
 > Portfólio de site pessoal para demonstrar meus conhecimentos e informações sobre a minha carreira.
-
-[Acesso](https://dev-alexsolda.vercel.app/)
 
 ### Ajustes e melhorias
 
