@@ -7,20 +7,27 @@ type ILinkBtProps = {
   icon: ReactElement
   text: string
   fn?: () => void
+  disabled?: boolean
 }
 
-const DefaultBt = ({ icon, text, fn }: ILinkBtProps): ReactElement => {
+const DefaultBt = ({
+  icon,
+  text,
+  fn,
+  disabled
+}: ILinkBtProps): ReactElement => {
   const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => setIsMounted(true), [])
 
-  if (!isMounted) {
+  if (!isMounted || disabled) {
     return <Spinner size="sm" />
   }
 
   return (
     <button
       onClick={fn}
+      disabled={disabled}
       className="cursor-pointer group active:scale-90 hover:shadow-bShadow ease-in duration-100 lg:min-w-[150px] px-6 py-2 text-primary flex items-center justify-center gap-x-1 border-[1px] border-solid border-primary rounded-lg"
     >
       <div>{icon}</div>
