@@ -11,7 +11,7 @@ export const projecsData: IProjecsDataInfos[] = [
   {
     name: 'WS Cars',
     description:
-      'Sistema simples para o estudo e desenvolvimento de um projeto com documentação técnica do componente utilizado usando o Storybook',
+      'Sistema simples para o estudo e desenvolvimento de um projeto com documentação técnica do componente utilizado o Storybook',
     banner: '/images/wscars-screen.png',
     repo: 'https://github.com/alexsolda/ws-cars',
     link: 'https://master.d29yn5wyfqkitr.amplifyapp.com/',
