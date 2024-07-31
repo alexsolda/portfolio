@@ -9,13 +9,13 @@ export type IProjecsDataInfos = {
 
 export const projecsData: IProjecsDataInfos[] = [
   {
-    name: 'CNPJ Finder',
+    name: 'WS Cars',
     description:
-      'Campo para consulta de dados de CNPJ através de API pública. Projeto desenvolvido com o intuíto de fixar os conhecimentos de tecnologias como o Vue.js e o consumo de API de terceiros.',
-    banner: '/images/cnpjfinder-screen.png',
-    repo: 'https://github.com/alexsolda/cnpj-finder',
-    link: 'https://cnpj-finder.netlify.app/',
-    tech: ['Vue.js', 'CSS', 'HTML', 'JavaScript', 'Axios']
+      'Sistema simples para o estudo e desenvolvimento de um projeto com documentação técnica do componente utilizado usando o Storybook',
+    banner: '/images/wscars-screen.png',
+    repo: 'https://github.com/alexsolda/ws-cars',
+    link: 'https://master.d29yn5wyfqkitr.amplifyapp.com/',
+    tech: ['ReactJS', 'JavaScript', 'Storybook', 'Tailwind', 'TypeScript']
   },
   {
     name: 'Tripp',
@@ -24,7 +24,15 @@ export const projecsData: IProjecsDataInfos[] = [
     banner: '/images/tripp-screen.png',
     repo: 'https://github.com/alexsolda/tripp',
     link: 'https://tripp-blog.vercel.app/',
-    tech: ['Next.js', 'JavaScript', 'GraphQl', 'Tailwind', 'Leaflet', 'CMS']
+    tech: [
+      'Next.js',
+      'JavaScript',
+      'GraphQl',
+      'Tailwind',
+      'Leaflet',
+      'CMS',
+      'TypeScript'
+    ]
   },
   {
     name: 'Portfólio',
@@ -32,6 +40,15 @@ export const projecsData: IProjecsDataInfos[] = [
     banner: '/images/portfolio-screen.png',
     repo: 'https://github.com/alexsolda/portfolio',
     link: '',
-    tech: ['Next.js', 'JavaScript', 'Tailwind']
+    tech: ['Next.js', 'JavaScript', 'Tailwind', 'TypeScript']
+  },
+  {
+    name: 'CNPJ Finder',
+    description:
+      'Campo para consulta de dados de CNPJ através de API pública. Projeto desenvolvido com o intuíto de fixar os conhecimentos de tecnologias como o Vue.js e o consumo de API de terceiros.',
+    banner: '/images/cnpjfinder-screen.png',
+    repo: 'https://github.com/alexsolda/cnpj-finder',
+    link: 'https://cnpj-finder.netlify.app/',
+    tech: ['Vue.js', 'CSS', 'HTML', 'JavaScript', 'Axios']
   }
 ]
