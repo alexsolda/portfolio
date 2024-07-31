@@ -61,7 +61,7 @@ const HomeTemplate = (): ReactElement => {
       <ModalContainer
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        title="Uma playlist que eu gosto de ouvir!"
+        title="O que estou ouvido utimamente:"
       >
         <>
           <iframe
